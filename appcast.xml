@@ -1,15 +1,26 @@
 <?xml version="1.0" standalone="yes"?><rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" version="2.0">
 <channel>
-<title>CutBox</title>
-<item>
-<title>1.0.20</title>
-<pubDate>Thu, 12 Apr 2018 21:49:50 +0800</pubDate>
-<sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
-<enclosure url="https://github.com/ocodo/CutBox/releases/download/1.0.20/CutBox.dmg"
-           sparkle:version="1902"
-           sparkle:shortVersionString="1.0.20"
-           length="6197604"
-           type="application/octet-stream"
-           sparkle:dsaSignature="MC4CFQCRdKHq9/0SGyN03DDi8VkSWrWGEgIVAIFau/LoXEfyHLa+6ju/2vDcMQe2"/>
-</item>
+  <title>CutBox</title>
+  <item>
+    <title>1.0.21</title>
+    <pubDate>Mon, 16 Apr 2018 07:45:50 +0800</pubDate>
+    <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.0.21/CutBox.dmg"
+               sparkle:version="2400"
+               sparkle:shortVersionString="1.0.21"
+               length="6215950"
+               type="application/octet-stream"
+               sparkle:dsaSignature="MCwCFD52mnwR9egMo7k5kCkon9Be9rWRAhQmM1cgeWYe8cfG/6kgthF0LerSJw=="/>
+  </item>
+  <item>
+    <title>1.0.20</title>
+    <pubDate>Thu, 12 Apr 2018 21:49:50 +0800</pubDate>
+    <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.0.20/CutBox.dmg"
+               sparkle:version="1902"
+               sparkle:shortVersionString="1.0.20"
+               length="6197604"
+               type="application/octet-stream"
+               sparkle:dsaSignature="MC4CFQCRdKHq9/0SGyN03DDi8VkSWrWGEgIVAIFau/LoXEfyHLa+6ju/2vDcMQe2"/>
+  </item>
 </channel></rss>
