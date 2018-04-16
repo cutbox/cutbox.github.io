@@ -21,7 +21,7 @@ DATA="version: $VERSION
 build_number: $BUILD_NUMBER
 dmg_length: $DMG_LENGTH
 dsa_signature: $DSA_SIGNATURE
-date: $(date +"%a, %d %b %Y %H:%M:%S %z" )"
+date: $(date -R)"
 
 appcast_top=$(head -3 appcast.xml)
 appcast_remaining=$(tail -n+4 appcast.xml)
