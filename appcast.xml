@@ -2,15 +2,15 @@
 <channel>
   <title>CutBox</title>
   <item>
-    <title>1.0.23</title>
-    <pubDate>Mon, 16 Apr 2018 23:34:29 +0800</pubDate>
+    <title>1.0.24</title>
+    <pubDate>Mon, 16 Apr 2018 23:56:47 +0800</pubDate>
     <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
-    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.0.23/CutBox.dmg"
-               sparkle:version="2436"
-               sparkle:shortVersionString="1.0.23"
-               length="6218230"
+    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.0.24/CutBox.dmg"
+               sparkle:version="2437"
+               sparkle:shortVersionString="1.0.24"
+               length="6218233"
                type="application/octet-stream"
-               sparkle:dsaSignature="MCwCFG5wMPUe8FrpwbMn91DLD2NDcEtSAhRE/HLEaB11cNS8wAV39d+t84Nh+A=="/>
+               sparkle:dsaSignature="MC4CFQC74Qzwrx0FzFcB7VNJKyekS9sSzQIVAKEpVo42x8eEPWwd5IrSBj8/MV6G"/>
   </item>
   <item>
     <title>1.0.22</title>
