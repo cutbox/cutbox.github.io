@@ -1,27 +1,32 @@
 #!/bin/bash
 
-[[ $# != 3 ]] && \
+[[ $# != 4 ]] && \
   echo '
 Usage:
 
-bin/make_appcast_item $plist $dmgfile $dsa_priv_key
+bin/make_appcast_item $plist $dmgfile $dsa_priv_key $release_notes_file
 ' && \
   exit 1
 
 PLIST=$1
 DMG_FILE=$2
 DSA_PRIV_KEY=$3
+RELEASE_NOTES_FILE=$4
 
 VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${PLIST}")
 BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${PLIST}")
 DMG_LENGTH=$(ls -l "$DMG_FILE" | unexpand | tr -s ' ' | cut -d' ' -f5)
 DSA_SIGNATURE=$(sign_update "$DMG_FILE" "$DSA_PRIV_KEY")
 
+RELEASE_NOTES="$( cat "$4" | cmark | tr -d "\n" )"
+
 DATA="version: $VERSION
 build_number: $BUILD_NUMBER
 dmg_length: $DMG_LENGTH
 dsa_signature: $DSA_SIGNATURE
-date: $(date -R)"
+date: $(date -R)
+release_notes: |
+  $RELEASE_NOTES"
 
 appcast_top=$(head -3 appcast.xml)
 appcast_remaining=$(tail -n+4 appcast.xml)
