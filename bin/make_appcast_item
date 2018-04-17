@@ -1,24 +1,29 @@
 #!/bin/bash
 
-[[ $# != 4 ]] && \
+[[ $# != 3 ]] && \
   echo '
 Usage:
 
-bin/make_appcast_item $plist $dmgfile $dsa_priv_key $release_notes_file
+bin/make_appcast_item $plist $dsa_priv_key $release_notes_file
 ' && \
   exit 1
 
 PLIST=$1
-DMG_FILE=$2
-DSA_PRIV_KEY=$3
-RELEASE_NOTES_FILE=$4
+DSA_PRIV_KEY=$2
+RELEASE_NOTES_FILE=$3
 
 VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${PLIST}")
 BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${PLIST}")
+
+wget https://github.com/ocodo/CutBox/releases/download/${VERSION}/CutBox.dmg
+
+DMG_FILE="./CutBox.dmg"
 DMG_LENGTH=$(ls -l "$DMG_FILE" | unexpand | tr -s ' ' | cut -d' ' -f5)
 DSA_SIGNATURE=$(sign_update "$DMG_FILE" "$DSA_PRIV_KEY")
 
-RELEASE_NOTES="$( cat "$4" | cmark | tr -d "\n" )"
+rm "$DMG_FILE"
+
+RELEASE_NOTES_HTML="$( cat "${RELEASE_NOTES_FILE}" | cmark | tr -d "\n" )"
 
 DATA="version: $VERSION
 build_number: $BUILD_NUMBER
@@ -26,11 +31,15 @@ dmg_length: $DMG_LENGTH
 dsa_signature: $DSA_SIGNATURE
 date: $(date -R)
 release_notes: |
-  $RELEASE_NOTES"
+  $RELEASE_NOTES_HTML"
 
 appcast_top=$(head -3 appcast.xml)
 appcast_remaining=$(tail -n+4 appcast.xml)
 
 echo "${appcast_top}
 $(echo "$DATA" | mustache - appcast_item.mustache)
-${appcast_remaining}"
+${appcast_remaining}" > new.xml
+
+mv -v new.xml appcast.xml
+
+bin/make_index $VERSION
