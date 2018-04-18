@@ -2,6 +2,19 @@
 <channel>
   <title>CutBox</title>
   <item>
+    <title>1.0.28</title>
+    <pubDate>Wed, 18 Apr 2018 22:00:47 +0800</pubDate>
+    <description><![CDATA[<p>CutBox version 1.0.28</p><ul><li>Clear history with <kbd>Cmd</kbd> + <kbd>Backspace</kbd></li></ul>
+]]></description>
+    <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.0.28/CutBox.dmg"
+               sparkle:version="2529"
+               sparkle:shortVersionString="1.0.28"
+               length="6223511"
+               type="application/octet-stream"
+               sparkle:dsaSignature="MC0CFQCIsby6ze++F4OxEFDv/jQLDgTj4wIUIoFdOmBhNJJYPRPB4dqo8oqVmmk="/>
+  </item>
+  <item>
     <title>1.0.27</title>
     <pubDate>Wed, 18 Apr 2018 19:22:56 +0800</pubDate>
     <description><![CDATA[<p>CutBox version 1.0.27</p><ul><li>Clear history requires confirmation (dialog can be supressed)</li></ul>
