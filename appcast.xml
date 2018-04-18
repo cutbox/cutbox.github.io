@@ -2,19 +2,6 @@
 <channel>
   <title>CutBox</title>
   <item>
-    <title>1.0.27</title>
-    <pubDate>Wed, 18 Apr 2018 13:24:43 +0800</pubDate>
-    <description><![CDATA[<p>CutBox version 1.0.27</p><ul><li>Clear history requires confirmation (dialog can be supressed)</li></ul>
-]]></description>
-    <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
-    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.0.27/CutBox.dmg"
-               sparkle:version="2511"
-               sparkle:shortVersionString="1.0.27"
-               length="6222753"
-               type="application/octet-stream"
-               sparkle:dsaSignature="MC0CFQCeJfIaE2aKnbUuzlPHaqMQhVcJxwIUC7EaBWhAqQSmhozekkX9Uxin878="/>
-  </item>
-  <item>
     <title>1.0.26</title>
     <pubDate>Wed, 18 Apr 2018 07:48:21 +0800</pubDate>
     <description><![CDATA[<p>CutBox version 1.0.26</p><ul><li>Tap search mode indicator to toggle search mode</li><li>Fix: Search mode changes sync to CutBox menu</li><li>Fix: CutBox Toggle Key recorder in preferences</li></ul>
