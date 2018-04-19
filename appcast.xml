@@ -2,6 +2,19 @@
 <channel>
   <title>CutBox</title>
   <item>
+    <title>1.0.29</title>
+    <pubDate>Thu, 19 Apr 2018 19:57:10 +0800</pubDate>
+    <description><![CDATA[<p>CutBox version 1.0.29</p><ul><li>Clear selected item(s) with keyboard (Cmd + Delete)</li><li>Improve keyboard support</li><li>Select multiple items using keyboard</li></ul>
+]]></description>
+    <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.0.29/CutBox.dmg"
+               sparkle:version="2600"
+               sparkle:shortVersionString="1.0.29"
+               length="6224409"
+               type="application/octet-stream"
+               sparkle:dsaSignature="MCwCFAwFciy994w4fDe2rmDKtqeVQqqXAhRdpORROzbKAe0R/4rKWxmisz8/xw=="/>
+  </item>
+  <item>
     <title>1.0.28</title>
     <pubDate>Wed, 18 Apr 2018 22:00:47 +0800</pubDate>
     <description><![CDATA[<p>CutBox version 1.0.28</p><ul><li>Clear history with <kbd>Cmd</kbd> + <kbd>Backspace</kbd></li></ul>
