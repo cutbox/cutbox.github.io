@@ -2,6 +2,19 @@
 <channel>
   <title>CutBox</title>
   <item>
+    <title>1.0.32</title>
+    <pubDate>Sun, 22 Apr 2018 21:44:01 +0800</pubDate>
+    <description><![CDATA[<p>CutBox version 1.0.30</p><ul><li>Preferences window layout redesigned</li><li>Add new color themes, Sandy Beach, Darktooth and Creamsody<ul><li>Dark and Light themes renamed to Darkness and Skylight</li></ul></li><li>Theme code refactored</li><li>Refactor confirmation dialog code</li></ul>
+]]></description>
+    <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.0.32/CutBox.dmg"
+               sparkle:version="2914"
+               sparkle:shortVersionString="1.0.32"
+               length="6247167"
+               type="application/octet-stream"
+               sparkle:dsaSignature="MCwCFC8l/AfqvYPCC++2rURzDbg4pYZQAhQLVDyiOW0co/oHUKjRnZNsvTKdkw=="/>
+  </item>
+  <item>
     <title>1.0.31</title>
     <pubDate>Sat, 21 Apr 2018 22:41:44 +0800</pubDate>
     <description><![CDATA[<p>CutBox version 1.0.31</p><ul><li>Preferences window layout redesigned</li><li>Add new color themes, Sandy Beach, Darktooth and Creamsody<ul><li>Dark and Light themes renamed to Darkness and Skylight</li></ul></li><li>Theme code refactored</li><li>Refactor confirmation dialog code</li></ul>
