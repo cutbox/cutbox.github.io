@@ -2,6 +2,19 @@
 <channel>
   <title>CutBox</title>
   <item>
+    <title>1.0.33</title>
+    <pubDate>Mon, 23 Apr 2018 20:12:02 +0800</pubDate>
+    <description><![CDATA[<p>CutBox version 1.0.33</p><ul><li>Add new color themes Purplehaze, Verdant and Amber Cathode</li></ul>
+]]></description>
+    <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.0.33/CutBox.dmg"
+               sparkle:version="2936"
+               sparkle:shortVersionString="1.0.33"
+               length="6248379"
+               type="application/octet-stream"
+               sparkle:dsaSignature="MCwCFAeWSdIaZsGZS0144izL/uWjdZBUAhQuPnUCMzjwykXAzeaCnHgTpQY3Zg=="/>
+  </item>
+  <item>
     <title>1.0.32</title>
     <pubDate>Sun, 22 Apr 2018 21:44:01 +0800</pubDate>
     <description><![CDATA[<p>CutBox version 1.0.32</p><ul><li>Preferences window layout redesigned</li><li>Add new color themes, Sandy Beach, Darktooth and Creamsody<ul><li>Dark and Light themes renamed to Darkness and Skylight</li></ul></li><li>Theme code refactored</li><li>Refactor confirmation dialog code</li></ul>
