@@ -1,6 +1,6 @@
 # CutBox version 1.0.39
 
-- TODO
+- Add hotkeys for use join string (Cmd + -) and wrap strings (Cmd + [)
 
 1.0.38
 

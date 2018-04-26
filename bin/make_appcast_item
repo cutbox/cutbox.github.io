@@ -45,5 +45,5 @@ mv -v new.xml appcast.xml
 bin/make_index $VERSION
 
 git add .
-
 git commit -m "$VERSION"
+git push
