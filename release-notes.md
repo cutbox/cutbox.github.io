@@ -1,4 +1,4 @@
-# CutBox version 1.0.39
+CutBox version 1.0.39
 
 - Add hotkeys for use join string (Cmd + -) and wrap strings (Cmd + [)
 

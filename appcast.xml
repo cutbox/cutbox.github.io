@@ -2,6 +2,19 @@
 <channel>
   <title>CutBox</title>
   <item>
+    <title>1.0.39</title>
+    <pubDate>Thu, 26 Apr 2018 22:46:05 +0800</pubDate>
+    <description><![CDATA[<p>CutBox version 1.0.39</p><ul><li>Add hotkeys for use join string (Cmd + -) and wrap strings (Cmd + [)</li></ul><p>1.0.38</p><ul><li>Add hotkey for changing color theme Cmd + T</li></ul><p>1.0.37</p><ul><li>Fix hairline gap above popup</li></ul><p>1.0.36</p><ul><li>Fix coloring of search mode indicator to match active color theme</li></ul><p>1.0.35</p><ul><li>Improve UI on search mode indicator</li></ul><p>1.0.34</p><ul><li>Redesign layout of search / preview</li></ul><p>1.0.33</p><ul><li>Add new color themes Purplehaze, Verdant and Amber Cathode</li></ul><p>1.0.32</p><ul><li>Preferences window layout redesigned</li><li>Add new color themes, Sandy Beach, Darktooth and Creamsody<ul><li>Dark and Light themes renamed to Darkness and Skylight</li></ul></li><li>Theme code refactored</li><li>Refactor confirmation dialog code</li></ul><p>1.0.29</p><ul><li>Clear selected item(s) with keyboard (Cmd + Delete)</li><li>Improve keyboard support</li><li>Select multiple items using keyboard</li></ul><p>1.0.27</p><ul><li>Clear history requires confirmation (dialog can be suppressed)</li></ul><p>1.0.26</p><ul><li>Tap search mode indicator to toggle search mode</li><li>Fix: Search mode changes sync to CutBox menu</li><li>Fix: CutBox Toggle Key recorder in preferences</li></ul><p>1.0.24</p><ul><li>Remove Selection (right click)</li><li>Cmd + Opt + double click removal is gone</li></ul><p>1.0.22</p><ul><li>Additional test coverage</li><li>Preference to set CutBox history limit</li></ul>
+]]></description>
+    <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.0.39/CutBox.dmg"
+               sparkle:version="3018"
+               sparkle:shortVersionString="1.0.39"
+               length="6512560"
+               type="application/octet-stream"
+               sparkle:dsaSignature="MCwCFF1/ZEHn/+UzRQgUQHZkITrUDbEnAhQoRAvPUea07vCZAnhrvw1Kq1Jdww=="/>
+  </item>
+  <item>
     <title>1.0.38</title>
     <pubDate>Thu, 26 Apr 2018 17:38:16 +0800</pubDate>
     <description><![CDATA[<p>CutBox version 1.0.38</p><ul><li>Add hotkey for changing color theme Cmd + T</li></ul><p>1.0.37</p><ul><li>Fix hairline gap above popup</li></ul><p>1.0.36</p><ul><li>Fix coloring of search mode indicator to match active color theme</li></ul><p>1.0.35</p><ul><li>Improve UI on search mode indicator</li></ul><p>1.0.34</p><ul><li>Redesign layout of search / preview</li></ul><p>1.0.33</p><ul><li>Add new color themes Purplehaze, Verdant and Amber Cathode</li></ul><p>1.0.32</p><ul><li>Preferences window layout redesigned</li><li>Add new color themes, Sandy Beach, Darktooth and Creamsody<ul><li>Dark and Light themes renamed to Darkness and Skylight</li></ul></li><li>Theme code refactored</li><li>Refactor confirmation dialog code</li></ul><p>1.0.29</p><ul><li>Clear selected item(s) with keyboard (Cmd + Delete)</li><li>Improve keyboard support</li><li>Select multiple items using keyboard</li></ul><p>1.0.27</p><ul><li>Clear history requires confirmation (dialog can be suppressed)</li></ul><p>1.0.26</p><ul><li>Tap search mode indicator to toggle search mode</li><li>Fix: Search mode changes sync to CutBox menu</li><li>Fix: CutBox Toggle Key recorder in preferences</li></ul><p>1.0.24</p><ul><li>Remove Selection (right click)</li><li>Cmd + Opt + double click removal is gone</li></ul><p>1.0.22</p><ul><li>Additional test coverage</li><li>Preference to set CutBox history limit</li></ul>
