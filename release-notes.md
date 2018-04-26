@@ -1,4 +1,8 @@
-CutBox version 1.0.38
+# CutBox version 1.0.39
+
+- TODO
+
+1.0.38
 
 - Add hotkey for changing color theme Cmd + T
 
