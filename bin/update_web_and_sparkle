@@ -1,6 +1,0 @@
-#!/bin/sh
-
-PROJECT_DIR=$(dirname $0)/..
-DSA="~/dsa_cb_priv.pem"
-PLIST=$PROJECT_DIR/../CutBox/CutBox/Info.plist
-$PROJECT_DIR/bin/make_appcast_item "$PLIST" "$DSA" "$PROJECT_DIR/release-notes.md"
