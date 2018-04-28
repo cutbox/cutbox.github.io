@@ -1,4 +1,8 @@
-CutBox version 1.0.39
+CutBox version 1.0.40
+
+- Compact user interface (set from CutBox menu) make things more alfred-like
+
+1.0.39
 
 - Add hotkeys for use join string (Cmd + -) and wrap strings (Cmd + [)
 
