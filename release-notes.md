@@ -1,4 +1,10 @@
-CutBox version 1.0.40
+CutBox version
+
+1.0.41
+
+- Spruce up search text UI
+
+1.0.40
 
 - Compact user interface (set from CutBox menu) make things more alfred-like
 
