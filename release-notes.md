@@ -1,4 +1,6 @@
-CutBox version
+CutBox version 1.0.42
+
+- Fix cutbox icon in search view
 
 1.0.41
 
