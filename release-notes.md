@@ -1,4 +1,9 @@
-CutBox version 1.0.42
+CutBox version 1.0.43
+
+- Add Compact UI setting to preferences window
+- Store clips in extensible dictionary store
+
+1.0.42
 
 - Fix cutbox icon in search view
 
