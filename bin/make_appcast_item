@@ -47,3 +47,5 @@ bin/make_index $VERSION
 git add .
 git commit -m "$VERSION"
 git push
+git tag $VERSION
+git push -t
