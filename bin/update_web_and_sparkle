@@ -1,0 +1,15 @@
+#!/bin/sh
+
+notify() {
+  osascript <<EOF
+              display notification "$2" with title "$1"
+EOF
+}
+
+notify "Appcast" "Building update to latest..."
+
+PROJECT_DIR="$(dirname $0)/.."
+DSA="$HOME/workspace/Sparkle-1.18.1/dsa_priv.pem"
+PLIST="$HOME/workspace/CutBox/CutBox/Info.plist"
+
+"$PROJECT_DIR/bin/make_appcast_item" "$PLIST" "$DSA" "$PROJECT_DIR/release-notes.md"
