@@ -7,7 +7,7 @@ EOF
 }
 
 [[ $# != 3 ]] && \
-  notify "Error" 'bin/make_appcast_item plist dsa_priv_key release_notes_file'
+  notify "Error" 'bin/make_appcast_item plist dsa_priv_key release_notes_file' \
   && \
     echo '
 Usage:
