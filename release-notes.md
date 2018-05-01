@@ -1,4 +1,8 @@
-CutBox version 1.0.43
+CutBox version 1.0.44
+
+- Sending Cmd+v / fake paste when using non-Qwerty keyboards
+
+1.0.43
 
 - Add Compact UI setting to preferences window
 - Store clips in extensible dictionary store
