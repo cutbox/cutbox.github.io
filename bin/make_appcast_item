@@ -61,8 +61,8 @@ notify "All set" "Committing and pushing appcast.xml"
 
 git add .
 git commit -m "$VERSION"
-git push
+git push -u origin head
 git tag $VERSION
-git push -t
+git push --tags
 
 notify "Appcast updated" "$VERSION"
