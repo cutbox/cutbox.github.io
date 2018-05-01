@@ -1,12 +1,21 @@
 #!/bin/bash
 
+notify() {
+  osascript <<EOF
+              display notification "$2" with title "$1"
+EOF
+}
+
 [[ $# != 3 ]] && \
-  echo '
+  notify "Error" 'bin/make_appcast_item plist dsa_priv_key release_notes_file'
+  && \
+    echo '
 Usage:
 
 bin/make_appcast_item $plist $dsa_priv_key $release_notes_file
 ' && \
   exit 1
+
 
 PLIST=$1
 DSA_PRIV_KEY=$2
@@ -15,7 +24,11 @@ RELEASE_NOTES_FILE=$3
 VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${PLIST}")
 BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${PLIST}")
 
+notify "Preparing Appcast.xml" "Fetching DMG version $VERSION"
+
 wget https://github.com/ocodo/CutBox/releases/download/${VERSION}/CutBox.dmg
+
+notify "Got CutBox.dmg" "$VERSION"
 
 DMG_FILE="./CutBox.dmg"
 DMG_LENGTH=$(ls -l "$DMG_FILE" | unexpand | tr -s ' ' | cut -d' ' -f5)
@@ -44,8 +57,12 @@ mv -v new.xml appcast.xml
 
 bin/make_index $VERSION
 
+notify "All set" "Committing and pushing appcast.xml"
+
 git add .
 git commit -m "$VERSION"
 git push
 git tag $VERSION
 git push -t
+
+notify "Appcast updated" "$VERSION"
