@@ -2,7 +2,7 @@
 
 notify() {
   osascript <<EOF
-              display notification "$2" with title "$1"
+  display notification "$2" with title "$1"
 EOF
 }
 
