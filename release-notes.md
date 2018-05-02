@@ -1,4 +1,4 @@
-CutBox version 1.0.44
+CutBox version 1.0.45
 
 - Sending Cmd+v / fake paste when using non-Qwerty keyboards
 
