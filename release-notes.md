@@ -1,4 +1,8 @@
-CutBox version 1.0.45
+CutBox version 1.0.46
+
+- Open CutBox on same screen as Mouse pointer
+
+1.0.45
 
 - Sending Cmd+v / fake paste when using non-Qwerty keyboards
 
