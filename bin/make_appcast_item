@@ -16,12 +16,19 @@ bin/make_appcast_item $plist $dsa_priv_key $release_notes_file
 ' && \
   exit 1
 
-
 PLIST=$1
 DSA_PRIV_KEY=$2
 RELEASE_NOTES_FILE=$3
 
 VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${PLIST}")
+OLD_VERSION=$(git tag | gsort -V | tail -1)
+
+if [[ "$VERSION" == "$OLD_VERSION" ]]; then
+  echo "Already up to date"
+  notify "Already up to date" "The published update matches the current CutBox version"
+  exit 2
+fi 
+
 BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${PLIST}")
 
 notify "Preparing Appcast.xml" "Fetching DMG version $VERSION"
