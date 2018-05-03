@@ -1,4 +1,10 @@
-CutBox version 1.0.46
+CutBox version 1.0.47
+
+- Favorites
+    - Right click item(s) and select "Toggle Favorite"
+    - Toggle favorites only with Cmd + F
+
+1.0.46
 
 - Open CutBox on same screen as Mouse pointer
 
