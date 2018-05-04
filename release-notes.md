@@ -1,4 +1,11 @@
-CutBox version 1.0.47
+CutBox version  1.0.48
+
+- Favorites
+    - Favorites / Search all indicator & toggle button (bottom left)
+    - Favorites are visibly marked with a background tint
+    - First item in CutBox can be favorited (bugfix from 1.0.47)
+
+1.0.47
 
 - Favorites
     - Right click item(s) and select "Toggle Favorite"
