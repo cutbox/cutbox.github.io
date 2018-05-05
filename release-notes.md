@@ -1,4 +1,8 @@
-CutBox version  1.0.49
+CutBox version  1.0.50
+
+- Favorites / Search all: setting persisted in defaults
+
+1.0.49
 
 - Favorites / search scope indicated with text instead of emojis
 - Click Magnifier to toggle between search scopes (all/favorites)
