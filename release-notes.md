@@ -1,4 +1,10 @@
-CutBox version  1.0.48
+CutBox version  1.0.49
+
+- Favorites / search scope indicated with text instead of emojis
+- Click Magnifier to toggle between search scopes (all/favorites)
+- Show a star in the search bar when in favorites search scope
+
+1.0.48
 
 - Favorites
     - Favorites / Search all indicator & toggle button (bottom left)
