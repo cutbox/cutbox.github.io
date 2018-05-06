@@ -1,6 +1,6 @@
 CutBox version 1.0.54
 
-
+- Fix position/sizing on portrait oriented display
 
 1.0.53
 
