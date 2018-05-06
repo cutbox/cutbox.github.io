@@ -2,6 +2,19 @@
 <channel>
   <title>CutBox</title>
   <item>
+    <title>1.0.53</title>
+    <pubDate>Sun, 06 May 2018 17:45:45 +0800</pubDate>
+    <description><![CDATA[<p>CutBox version 1.0.53</p><ul><li>Maintain selection when toggling color themes (with Cmd+T)</li></ul><p>1.0.52</p><ul><li>Show favorite / normal item using left column icons</li><li>Maintain selection when toggling favorites (Opt + click selected item(s) or with context menu)</li></ul><p>1.0.51</p><ul><li>Preferences option: Protect favorites when history is cleared</li></ul><p>1.0.50</p><ul><li>Favorites / Search all: setting persisted in defaults</li></ul><p>1.0.49</p><ul><li>Favorites / search scope indicated with text instead of emojis</li><li>Click Magnifier to toggle between search scopes (all/favorites)</li><li>Show a star in the search bar when in favorites search scope</li></ul><p>1.0.48</p><ul><li>Favorites<ul><li>Favorites / Search all indicator &amp; toggle button (bottom left)</li><li>Favorites are visibly marked with a background tint</li><li>First item in CutBox can be favorited (bugfix from 1.0.47)</li></ul></li></ul>
+]]></description>
+    <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.0.53/CutBox.dmg"
+               sparkle:version="3880"
+               sparkle:shortVersionString="1.0.53"
+               length="6529647"
+               type="application/octet-stream"
+               sparkle:dsaSignature="MC0CFQCsJ0EKPXTx1H/1nkfH+ZwRIgrhRgIUKDiVGv39z5anrSkaTQlC6BeCUR0="/>
+  </item>
+  <item>
     <title>1.0.52</title>
     <pubDate>Sun, 06 May 2018 15:27:01 +0800</pubDate>
     <description><![CDATA[<p>CutBox version  1.0.52</p><ul><li>Show favorite / normal item using left column icons</li><li>Maintain selection when toggling favorites (Opt + click selected item(s) or with context menu)</li></ul><p>1.0.51</p><ul><li>Preferences option: Protect favorites when history is cleared</li></ul><p>1.0.50</p><ul><li>Favorites / Search all: setting persisted in defaults</li></ul><p>1.0.49</p><ul><li>Favorites / search scope indicated with text instead of emojis</li><li>Click Magnifier to toggle between search scopes (all/favorites)</li><li>Show a star in the search bar when in favorites search scope</li></ul><p>1.0.48</p><ul><li>Favorites<ul><li>Favorites / Search all indicator &amp; toggle button (bottom left)</li><li>Favorites are visibly marked with a background tint</li><li>First item in CutBox can be favorited (bugfix from 1.0.47)</li></ul></li></ul>
