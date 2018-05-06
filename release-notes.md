@@ -1,5 +1,9 @@
-CutBox version  1.0.50
+CutBox version  1.0.51
 
+- Preferences option: Protect favorites when history is cleared
+
+1.0.50
+ 
 - Favorites / Search all: setting persisted in defaults
 
 1.0.49
