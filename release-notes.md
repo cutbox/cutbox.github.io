@@ -1,4 +1,8 @@
-CutBox version 1.0.53
+CutBox version 1.0.54
+
+
+
+1.0.53
 
 - Maintain selection when toggling color themes (with Cmd+T)
 
