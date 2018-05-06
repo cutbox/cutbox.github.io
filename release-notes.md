@@ -1,4 +1,8 @@
-CutBox version  1.0.52
+CutBox version 1.0.53
+
+- Maintain selection when toggling color themes (with Cmd+T)
+
+1.0.52
 
 - Show favorite / normal item using left column icons
 - Maintain selection when toggling favorites (Opt + click selected item(s) or with context menu)
@@ -8,7 +12,7 @@ CutBox version  1.0.52
 - Preferences option: Protect favorites when history is cleared
 
 1.0.50
- 
+
 - Favorites / Search all: setting persisted in defaults
 
 1.0.49
