@@ -1,5 +1,6 @@
 CutBox version 1.0.54
 
+- Use tinted icon images instead of font glyphs for cutbox history items
 - Fix position/sizing on portrait oriented display
 
 1.0.53
