@@ -1,5 +1,9 @@
 CutBox version 1.0.54
 
+- Fix size if history item icons to 16x16
+
+1.0.55
+
 - Use tinted icon images instead of font glyphs for cutbox history items
 - Fix position/sizing on portrait oriented display
 
