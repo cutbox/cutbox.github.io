@@ -1,6 +1,6 @@
 CutBox version 1.0.55
 
-- Fix size if history item icons to 16x16
+- Fix size of history item icons to 16x16
 
 1.0.54
 
