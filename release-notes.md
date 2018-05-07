@@ -1,4 +1,4 @@
-CutBox version 1.0.56
+CutBox version 1.0.57
 
 - Improve standard history icon
 
