@@ -1,4 +1,9 @@
-CutBox version 1.0.57
+CutBox version 1.0.58
+
+- Bugfix - crash when there are no history items and pressing up or down arrow
+- Minor tweak to history/page icon
+
+1.0.57
 
 - Improve standard history icon
 
