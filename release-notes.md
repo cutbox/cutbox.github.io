@@ -1,4 +1,13 @@
-CutBox version 1.0.58
+CutBox version 1.0.59
+
+- Stop CutBox history immediately re-adding the top item if it's just
+  been removed
+- Safely access history when creating table rows
+- Report History memory use
+- Refactor code for clip items table view
+- Use multicolumn table for CutBox history
+
+1.0.58
 
 - Bugfix - crash when there are no history items and pressing up or down arrow
 - Minor tweak to history/page icon
