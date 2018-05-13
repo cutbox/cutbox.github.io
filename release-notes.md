@@ -1,4 +1,8 @@
-CutBox version 1.0.60
+CutBox version 1.0.61
+
+- Move separator in advanced preferences tab
+
+1.0.60
 
 - Reorganize preferences window into tabs
 
