@@ -1,4 +1,8 @@
-CutBox version 1.0.59
+CutBox version 1.0.60
+
+- Reorganize preferences window into tabs
+
+1.0.59
 
 - Stop CutBox history immediately re-adding the top item if it's just
   been removed
