@@ -1,8 +1,4 @@
-CutBox version 1.1.0
-
-- Javascript: ~/.cutbox.js can process items before pasting.
-
-1.0.61
+CutBox version 1.0.61
 
 - Move separator in advanced preferences tab
 
