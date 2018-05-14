@@ -1,6 +1,10 @@
-CutBox version 1.1.0
+CutBox version 1.1.1
 
-- Javascript: optionally process items through js before pasting using Cmd+Enter and `~/.cutbox.js`
+- Cleanup Javascript information text in preferences.
+
+1.1.0
+
+- Javascript: optionally process items through js before pasting using **Cmd**+**Enter** and `~/.cutbox.js`
 
 1.0.61
 
