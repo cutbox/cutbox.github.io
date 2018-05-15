@@ -1,4 +1,8 @@
-CutBox version 1.1.3
+CutBox version 1.1.4
+
+- Fixes #63 - Item selection order is used by preview & paste
+
+1.1.3
 
 - Fixes #62 - Make sure favorites are remembered when pasting them
 
