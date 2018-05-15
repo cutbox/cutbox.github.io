@@ -1,4 +1,8 @@
-CutBox version 1.1.2
+CutBox version 1.1.3
+
+- Fixes #62 - Make sure favorites are remembered when pasting them
+
+1.1.2
 
 - Fixes #61 - Remove items wasn't working
 
