@@ -1,4 +1,9 @@
-CutBox version 1.1.4
+CutBox version 1.2.0
+
+- Paste items through Javascript defined in `~/.cutbox.js`
+- See https://github.com/cutbox/CutBox/wiki/Javascript-support
+
+1.1.4
 
 - Fixes #63 - Item selection order is used by preview & paste
 
