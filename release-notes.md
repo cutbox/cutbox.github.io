@@ -1,4 +1,8 @@
-CutBox version 1.2.0
+CutBox version 1.2.1
+
+- Clean up preferences layout
+
+1.2.0
 
 - Paste items through Javascript defined in `~/.cutbox.js`
 - See https://github.com/cutbox/CutBox/wiki/Javascript-support
