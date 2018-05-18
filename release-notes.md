@@ -1,4 +1,10 @@
-CutBox version 1.2.1
+CutBox version 1.3.0
+
+- JS Function fuzzy search/filtering
+- Javascript REPL for debugging your `~.cutbox.js` (in Preferences -> Javascript)
+- Notify how many js functions were loaded.
+
+1.2.2
 
 - Clean up preferences layout
 
