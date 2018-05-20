@@ -1,4 +1,8 @@
-CutBox version 1.3.2
+CutBox version 1.3.4
+
+- Bug fix - crash when pasting through JS / no functions
+
+1.3.2
 
 - New color themes added
 - Some existing color themes tweaked
