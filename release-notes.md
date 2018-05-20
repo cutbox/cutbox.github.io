@@ -1,4 +1,9 @@
-CutBox version 1.3.0
+CutBox version 1.3.1
+
+- Add clear button to JS REPL
+- Allow preview text to scroll and remain unwrapped
+
+1.3.0
 
 - JS Function fuzzy search/filtering
 - Javascript REPL for debugging your `~.cutbox.js` (in Preferences -> Javascript)
