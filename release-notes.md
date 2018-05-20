@@ -1,4 +1,10 @@
-CutBox version 1.3.1
+CutBox version 1.3.2
+
+- New color themes added
+- Some existing color themes tweaked
+- Refactoring search/js func views to share common base
+
+1.3.1
 
 - Add clear button to JS REPL
 - Allow preview text to scroll and remain unwrapped
