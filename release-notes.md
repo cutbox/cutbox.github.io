@@ -1,4 +1,8 @@
-CutBox version 1.3.4
+CutBox version 1.3.5
+
+- Bug fix - escape in JS Func should close cutbox
+
+1.3.4
 
 - Bug fix - crash when pasting through JS / no functions
 
