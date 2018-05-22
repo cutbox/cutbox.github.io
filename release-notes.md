@@ -1,4 +1,8 @@
-CutBox version 1.3.5
+CutBox version 1.3.6
+
+- Preview color theme in preferences
+
+1.3.5
 
 - Bug fix - escape in JS Func should close cutbox
 
