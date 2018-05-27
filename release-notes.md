@@ -1,4 +1,8 @@
-CutBox version 1.3.6
+CutBox version 1.3.7
+
+- Fix crashing: when history items change (remove)
+
+1.3.6
 
 - Preview color theme in preferences
 
