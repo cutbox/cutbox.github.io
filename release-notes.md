@@ -1,4 +1,9 @@
-CutBox version 1.3.7
+CutBox version 1.3.8
+
+- Allow module loading with `require("path/file.js")` to JS `~/.cutbox.js`
+- Code cleanup
+
+1.3.7
 
 - Fix crashing: when history items change (remove)
 
