@@ -1,4 +1,10 @@
-CutBox version 1.3.8
+CutBox version 1.3.9
+
+- Reload ~/.cutbox.js from status menu and js functions right-click context menu
+- A few cosmetic changes to the REPL view
+- Better test coverage
+
+1.3.8
 
 - Allow module loading with `require("path/file.js")` to JS `~/.cutbox.js`
 - Code cleanup
