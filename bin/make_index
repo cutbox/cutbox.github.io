@@ -2,5 +2,5 @@
 
 TEMPFILE=$(mktemp -t cutbox.github.io.version.yml)
 echo "version: $1" > "${TEMPFILE}"
-mustache "${TEMPFILE}" index.mustache > index.html
+mustache "${TEMPFILE}" index.html.mustache > index.html
 rm "${TEMPFILE}"

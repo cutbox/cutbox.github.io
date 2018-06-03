@@ -13,13 +13,26 @@ body {
   justify-content: center;
 }
 
-.Aligner-item {
-  max-width: 50%;
+@media (max-width: 800px) {
+  .Aligner {
+    display: block;
+  }
 }
 
-.Aligner-item--fixed {
-  flex: none;
-  max-width: 80%;
+.Aligner-item, .Card{
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+  border: 1px solid rgba(1,1,1,0.1);
+  border-radius: 7px;
+  margin: 5px;
+  height: 360px;
+}
+
+@media (max-width: 800px) {
+  .Aligner-item, .Card{
+    width: auto;
+  }
 }
 
 .Version {
@@ -34,7 +47,7 @@ body {
 .Button {
   padding: 1em;
   border-radius: 7px;
-  border: 1px solid rgba(0,0,0,0.5);
+  border: 1px solid rgba(0,0,0,0.1);
 }
 
 a.Button:hover {
@@ -50,3 +63,7 @@ a:link    { color: #181818; }
 a:visited { color: #282828; }
 a:hover   { color: #181818; }
 a:active  { color: #181818; }
+
+.fas, .fa {
+  color: rgba(37,136,166,0.5);
+}
