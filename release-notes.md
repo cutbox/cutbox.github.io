@@ -1,4 +1,8 @@
-CutBox version 1.3.9
+CutBox version 1.3.10
+
+- Click cutbox icon to open JS Function search
+
+1.3.9
 
 - Reload ~/.cutbox.js from status menu and js functions right-click context menu
 - A few cosmetic changes to the REPL view
