@@ -1,4 +1,8 @@
-CutBox version 1.3.10
+CutBox version 1.3.11
+
+- Fix about box icon
+
+1.3.10
 
 - Click cutbox icon to open JS Function search
 
