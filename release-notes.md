@@ -1,4 +1,8 @@
-CutBox version 1.3.11
+CutBox version 1.3.13
+
+- Fix placement on multi screens - (#73)
+
+1.3.11
 
 - Fix about box icon
 
