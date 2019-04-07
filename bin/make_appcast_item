@@ -23,11 +23,13 @@ RELEASE_NOTES_FILE=$3
 VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${PLIST}")
 OLD_VERSION=$(git tag | gsort -V | tail -1)
 
-if [[ "$VERSION" == "$OLD_VERSION" ]]; then
-  echo "Already up to date"
-  notify "Already up to date" "The published update matches the current CutBox version"
-  exit 2
-fi 
+if [[ $4 != "FORCE" ]]; then
+  if [[ "$VERSION" == "$OLD_VERSION" ]]; then
+    echo "Already up to date"
+    notify "Already up to date" "The published update matches the current CutBox version"
+    exit 2
+  fi
+fi
 
 BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${PLIST}")
 
