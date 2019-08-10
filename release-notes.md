@@ -1,4 +1,3 @@
-CutBox version 1.4.3
+CutBox version 1.4.4
 
-- Fix crash on when Cmd is tapped.
-- Update all dependencies
+- Thanks to @dtsd for history speedup improvement.

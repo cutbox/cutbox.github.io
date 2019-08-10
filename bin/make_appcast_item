@@ -58,6 +58,8 @@ release_notes: |
 appcast_top=$(head -3 appcast.xml)
 appcast_remaining=$(tail -n+4 appcast.xml)
 
+echo "${DATA}"
+
 echo "${appcast_top}
 $(echo "$DATA" | mustache - appcast_item.mustache)
 ${appcast_remaining}" > new.xml
