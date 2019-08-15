@@ -1,3 +1,3 @@
-CutBox version 1.4.4
+CutBox version 1.4.5
 
-- Thanks to @dtsd for history speedup improvement.
+- Fix signing for Mojave 10.14.6

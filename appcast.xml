@@ -2,6 +2,19 @@
 <channel>
   <title>CutBox</title>
   <item>
+    <title>1.4.5</title>
+    <pubDate>Thu, 15 Aug 2019 19:42:42 +0800</pubDate>
+    <description><![CDATA[<p>CutBox version 1.4.5</p><ul><li>Fix signing for Mojave 10.14.6</li></ul>
+]]></description>
+    <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.4.5/CutBox.dmg"
+               sparkle:version="10219"
+               sparkle:shortVersionString="1.4.5"
+               length="7116291"
+               type="application/octet-stream"
+               sparkle:dsaSignature="MC0CFEZVNQkKW6qHtJfvMFVOPn6DVKDSAhUAswLhj/DLN1F74Qz3RDQZgfy19O8="/>
+  </item>
+  <item>
     <title>1.4.4</title>
     <pubDate>Sat, 10 Aug 2019 14:56:38 +0800</pubDate>
     <description><![CDATA[<p>CutBox version 1.4.4</p><ul><li>Thanks to @dtsd for history speedup improvement.</li></ul>
