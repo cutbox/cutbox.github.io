@@ -1,3 +1,6 @@
-CutBox version 1.4.5
+CutBox version 1.4.7
 
-- Fix signing for Mojave 10.14.6
+- Fix signing for Mojave (needs testing on Catalina)
+
+- Fix fuzzy match crash (#90)
+    - Replace yichizhang/SwiftyStringScore with 8Bytes/SwiftyStringScore
