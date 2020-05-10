@@ -2,6 +2,19 @@
 <channel>
   <title>CutBox</title>
   <item>
+    <title>1.4.8</title>
+    <pubDate>Sun, 10 May 2020 13:23:11 +0800</pubDate>
+    <description><![CDATA[<p>CutBox version 1.4.8</p><ul><li>Fix signing problem on Mojave &amp; Catalina (#94, #95)</li><li>Fix fuzzy match crash (#90)<ul><li>yichizhang/SwiftyStringScore replaced with 8Bytes/SwiftyStringScore</li></ul></li><li>Minor changes to build process and other small lint level changes</li></ul>
+]]></description>
+    <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.4.8/CutBox.dmg"
+               sparkle:version="10255"
+               sparkle:shortVersionString="1.4.8"
+               length="7204898"
+               type="application/octet-stream"
+               sparkle:dsaSignature="MC0CFQCNz46ofAstdCUEwalziOrL8CCWWQIUTYwSEc+vifGfoBr6iDjJ8ktcMvw="/>
+  </item>
+  <item>
     <title>1.4.5</title>
     <pubDate>Thu, 15 Aug 2019 19:42:42 +0800</pubDate>
     <description><![CDATA[<p>CutBox version 1.4.5</p><ul><li>Fix signing for Mojave 10.14.6</li></ul>
