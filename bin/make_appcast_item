@@ -23,6 +23,29 @@ RELEASE_NOTES_FILE=$3
 VERSION=$(/usr/libexec/PlistBuddy -c "Print CFBundleShortVersionString" "${PLIST}")
 OLD_VERSION=$(git tag | gsort -V | tail -1)
 
+echo ""
+echo "------------------------------------------------------------------------------------------"
+echo " CutBox release... ${VERSION}"
+echo "=========================================================================================="
+echo " Make appcast item: ${VERSION} (upgrade from: ${OLD_VERSION}) "
+echo ""
+echo " Using private key: ${DSA_PRIV_KEY}"
+echo ""
+echo " Release Notes: "
+echo "------------------------------------------------------------------------------------------"
+cat ${RELEASE_NOTES_FILE}
+echo "------------------------------------------------------------------------------------------"
+echo " All ok? press [y] to continue..."
+
+while :; do
+read -n 1 k <&1
+if [[ $k != y ]];then
+  echo ""
+  echo "quitting..."
+  exit 1
+fi
+done
+
 if [[ $4 != "FORCE" ]]; then
   if [[ "$VERSION" == "$OLD_VERSION" ]]; then
     echo "Already up to date"
