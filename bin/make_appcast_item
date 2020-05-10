@@ -37,13 +37,18 @@ cat ${RELEASE_NOTES_FILE}
 echo "------------------------------------------------------------------------------------------"
 echo " All ok? press [y] to continue..."
 
-while :; do
-read -n 1 k <&1
-if [[ $k != y ]];then
-  echo ""
-  echo "quitting..."
-  exit 1
-fi
+while :
+do
+  read -n 1 k <&1
+
+  if [[ $k = "y" ]];then
+    echo "..."
+    break
+  else
+    echo ""
+    echo "quitting..."
+    exit 1
+  fi
 done
 
 if [[ $4 != "FORCE" ]]; then
