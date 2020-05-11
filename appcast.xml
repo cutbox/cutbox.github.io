@@ -2,6 +2,19 @@
 <channel>
   <title>CutBox</title>
   <item>
+    <title>1.4.10</title>
+    <pubDate>Mon, 11 May 2020 18:50:24 +0800</pubDate>
+    <description><![CDATA[<p>CutBox version 1.4.10</p><ul><li>Fix Dialogs: &quot;don't show this again&quot; and use selected choice (ok/cancel)</li><li>Add &quot;Show all hidden dialogs&quot; button to preferences</li></ul>
+]]></description>
+    <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+    <enclosure url="https://github.com/ocodo/CutBox/releases/download/1.4.10/CutBox.dmg"
+               sparkle:version="10446"
+               sparkle:shortVersionString="1.4.10"
+               length="7206573"
+               type="application/octet-stream"
+               sparkle:dsaSignature="MC0CFGzlAEXNlpTmH8RciU4Zv5YxvjGDAhUAoZK1KJ5KpMDYBsPb33yOJe9vI7s="/>
+  </item>
+  <item>
     <title>1.4.9</title>
     <pubDate>Mon, 11 May 2020 00:29:33 +0800</pubDate>
     <description><![CDATA[<p>CutBox version 1.4.9</p><ul><li>Remove annoying nag about missing JS.</li><li>UI Tests removed (they weren't really tests, focus shift to unit tests)</li></ul>
