@@ -1,4 +1,4 @@
-CutBox version 1.4.9
+CutBox version 1.4.10
 
-- Remove annoying nag about missing JS.
-- UI Tests removed (they weren't really tests, focus shift to unit tests)
+- Fix Dialogs: "don't show this again" and use selected choice (ok/cancel)
+- Add "Show all hidden dialogs" button to preferences
