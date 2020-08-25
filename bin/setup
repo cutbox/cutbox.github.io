@@ -1,0 +1,8 @@
+#!/bin/sh
+
+which mustache
+if [[ "$?" == "0" ]];then
+  echo "mustache ok"
+else
+  echo "cutbox.github.io requires a mustache binary" && exit 1
+fi
