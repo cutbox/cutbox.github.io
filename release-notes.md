@@ -1,5 +1,5 @@
-CutBox version 1.4.12
+CutBox version 1.4.13
 
-- General clean up
-- Dependencies upgraded
-- Cocoapods upgraded 
+- Fixing build script
+- Dependencies set correctly
+
