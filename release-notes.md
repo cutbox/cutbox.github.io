@@ -1,5 +1,5 @@
-CutBox version 1.4.13
+CutBox version 1.4.14
 
-- Fixing build script
-- Dependencies set correctly
+- Fix setup script
+- Fix unit test scheme/target
 
