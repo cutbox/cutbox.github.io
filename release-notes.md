@@ -1,5 +1,3 @@
-CutBox version 1.4.16
+CutBox version 1.4.17
 
-- Fix setup script
-- Fix unit test scheme/target
-
+- CutBox Themes are now a json file format.
