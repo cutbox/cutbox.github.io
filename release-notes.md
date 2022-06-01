@@ -4,7 +4,12 @@ CutBox version 1.4.18
 
 - Place theme files in `~/.config/cutbox/`.
 
-    Themes are in [JSON](https://json.org) format. All key names are case sensitive. The file extension is `.cutboxTheme` _(case sensitive)_
+    Themes are in [JSON](https://json.org) format. All key names are case sensitive. The file extension is `.cutboxTheme`.
+    If a theme is invalid CutBox will not start up. To debug errors from your theme, run CutBox from the terminal...
+
+        /Applications/CutBox.app/Contents/MacOS/CutBox
+
+    The terminal will display error information when it tries to load your theme. First check the JSON format is valid. Check the JSON property names are correct. Check that colors are quoted `""` and the correct RGB or RGBA values are used.  The `"spacing"` value must be a number (and not quoted!) values under 5 are recommended. 
 
     Color values can be either RGB or RGBA Hex strings. See the example below.
 
