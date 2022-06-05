@@ -1,5 +1,4 @@
-CutBox version 1.4.19
+CutBox version 1.4.20
 
-- No longer show empty JS preview when no JS Functions are available.
-- Cancel viewing only favorites when the search window closes.
+- Remove clear button from key recorder in preferences.
 
