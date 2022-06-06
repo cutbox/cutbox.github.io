@@ -4,18 +4,16 @@ notify() {
   osascript <<EOF
               display notification "$2" with title "$1"
 EOF
+
+  echo "$1"
   echo "$2"
 }
 
-[[ $# < 3 ]] && \
-  notify "Error" 'bin/make_appcast_item plist dsa_priv_key release_notes_file' \
-  && \
-    echo '
-Usage:
-
-bin/make_appcast_item $plist $dsa_priv_key $release_notes_file
-' && \
+if (( $# != 3 ))
+then
+  notify "Usage" "bin/make_appcast_item <plist> <dsa_priv_key> <release_notes_file>"
   exit 1
+fi
 
 PLIST=$1
 DSA_PRIV_KEY=$2
@@ -34,16 +32,18 @@ echo " Using private key: ${DSA_PRIV_KEY}"
 echo ""
 echo " Release Notes: "
 echo "------------------------------------------------------------------------------------------"
-cat ${RELEASE_NOTES_FILE}
+cat "${RELEASE_NOTES_FILE}"
 echo "------------------------------------------------------------------------------------------"
-echo " All ok? press [y] to continue..."
+echo " !!!IMPORTANT --- THIS WILL TAG AND PUSH TO GIT ORIGIN!!! "
+echo "------------------------------------------------------------------------------------------"
+echo " Go ahead? press [y] to continue (any other to abort)"
 
 while :
 do
-  read -n 1 k <&1
+  read -rn 1 KEY <&1
 
-  if [[ $k = "y" ]];then
-    echo "..."
+  if [[ $KEY = "y" ]]
+  then
     break
   else
     echo ""
@@ -52,29 +52,35 @@ do
   fi
 done
 
-if [[ $4 != "FORCE" ]]; then
-  if [[ "$VERSION" == "$OLD_VERSION" ]]; then
-    echo "Already up to date"
+if [[ -n $FORCE_APPCAST ]]
+then
+  if [[ "$VERSION" == "$OLD_VERSION" ]]
+  then
     notify "Already up to date" "The published update matches the current CutBox version"
     exit 2
   fi
 fi
 
-BUILD_NUMBER=$(/usr/libexec/PlistBuddy -c "Print CFBundleVersion" "${PLIST}")
+IS_404=$(curl -s "https://github.com/cutbox/CutBox/releases/download/${VERSION}/CutBox.dmg" --write-out "%{http_code}")
+
+if [[ "$IS_404" == "Not Found404" ]]
+then
+  notify "" "CutBox.dmg ${VERSION} not found (404)"
+  exit 1
+fi
 
 notify "Preparing Appcast.xml" "Fetching DMG version $VERSION"
-
-wget https://github.com/ocodo/CutBox/releases/download/${VERSION}/CutBox.dmg
+wget -q "https://github.com/cutbox/CutBox/releases/download/${VERSION}/CutBox.dmg"
 
 notify "Got CutBox.dmg" "$VERSION"
 
 DMG_FILE="./CutBox.dmg"
-DMG_LENGTH=$(ls -l "$DMG_FILE" | unexpand | tr -s ' ' | cut -d' ' -f5)
+DMG_LENGTH=$(stat -f "%z" "$DMG_FILE")
 DSA_SIGNATURE=$(sign_update "$DMG_FILE" "$DSA_PRIV_KEY")
 
 rm "$DMG_FILE"
 
-RELEASE_NOTES_HTML="$( cat "${RELEASE_NOTES_FILE}" | cmark | tr -d "\n" )"
+RELEASE_NOTES_HTML="$( cmark "${RELEASE_NOTES_FILE}" | tr -d "\n" )"
 
 appcast_top=$(head -3 appcast.xml)
 appcast_remaining=$(tail -n+4 appcast.xml)
@@ -82,22 +88,26 @@ appcast_remaining=$(tail -n+4 appcast.xml)
 echo "${appcast_top}
 $(
   VERSION=$VERSION \
-  DMG_LENGTH=$DMG_LENGTH \
-  DSA_SIGNATURE=$DSA_SIGNATURE \
-  DATE=$(date -R) \
-  RELEASE_NOTES=$RELEASE_NOTES_HTML \
-  mo appcast_item.mustache
+    DMG_LENGTH=$DMG_LENGTH \
+    DSA_SIGNATURE=$DSA_SIGNATURE \
+    DATE=$(date -R) \
+    RELEASE_NOTES=$RELEASE_NOTES_HTML \
+    mo appcast_item.mustache
 )
 ${appcast_remaining}" > appcast.xml
 
-bin/make_index $VERSION
+bin/make_index "$VERSION"
 
-notify "All set" "Committing and pushing appcast.xml"
+if [[ -z "$DEBUG_APPCAST" ]]; then
+  notify "All set" "Committing and pushing appcast.xml"
 
-git add .
-git commit -m "$VERSION"
-git push -u origin head
-git tag $VERSION
-git push --tags
+  git add .
+  git commit -m "$VERSION"
+  git push -u origin head
+  git tag "$VERSION"
+  git push --tags
 
-notify "Appcast updated" "$VERSION"
+  notify "Appcast updated" "$VERSION"
+else
+  notify "Dry run complete, rollback files in git" "$VERSION"
+fi

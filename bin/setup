@@ -1,7 +1,8 @@
 #!/bin/sh
 
 which mustache
-if [[ "$?" == "0" ]];then
+if [[ "$?" == "0" ]]
+then
   echo "mustache ok"
 else
   echo "
@@ -11,7 +12,8 @@ see: https://github.com/tests-always-included/mo
 fi
 
 which cmark
-if [[ "$?" == "0" ]];then
+if [[ "$?" == "0" ]]
+then
   echo "cmark ok"
 else
   echo "
