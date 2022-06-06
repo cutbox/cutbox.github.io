@@ -1,4 +1,4 @@
-CutBox version 1.4.20
+CutBox version 1.4.21
 
-- Remove clear button from key recorder in preferences.
+- Reload themes in preferences
 
