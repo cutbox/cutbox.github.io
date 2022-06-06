@@ -76,24 +76,19 @@ rm "$DMG_FILE"
 
 RELEASE_NOTES_HTML="$( cat "${RELEASE_NOTES_FILE}" | cmark | tr -d "\n" )"
 
-DATA="version: $VERSION
-build_number: $BUILD_NUMBER
-dmg_length: $DMG_LENGTH
-dsa_signature: $DSA_SIGNATURE
-date: $(date -R)
-release_notes: |
-  $RELEASE_NOTES_HTML"
-
 appcast_top=$(head -3 appcast.xml)
 appcast_remaining=$(tail -n+4 appcast.xml)
 
-echo "${DATA}"
-
 echo "${appcast_top}
-$(echo "$DATA" | mustache - appcast_item.mustache)
-${appcast_remaining}" > new.xml
-
-mv -v new.xml appcast.xml
+$(
+  VERSION=$VERSION \
+  DMG_LENGTH=$DMG_LENGTH \
+  DSA_SIGNATURE=$DSA_SIGNATURE \
+  DATE=$(date -R) \
+  RELEASE_NOTES=$RELEASE_NOTES_HTML \
+  mo appcast_item.mustache
+)
+${appcast_remaining}" > appcast.xml
 
 bin/make_index $VERSION
 

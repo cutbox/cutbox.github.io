@@ -4,5 +4,18 @@ which mustache
 if [[ "$?" == "0" ]];then
   echo "mustache ok"
 else
-  echo "cutbox.github.io requires a mustache binary" && exit 1
+  echo "
+cutbox.github.io requires a mo binary
+see: https://github.com/tests-always-included/mo
+" && exit 1
+fi
+
+which cmark
+if [[ "$?" == "0" ]];then
+  echo "cmark ok"
+else
+  echo "
+cutbox.github.io requires a cmark binary
+(brew install cmark)
+" && exit 1
 fi
