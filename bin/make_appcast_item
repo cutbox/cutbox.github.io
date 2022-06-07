@@ -2,15 +2,14 @@
 
 notify() {
   osascript <<EOF
-              display notification "$2" with title "$1"
+    display notification "$2" with title "$1"
 EOF
 
   echo "$1"
   echo "$2"
 }
 
-if (( $# != 3 ))
-then
+if (( $# != 3 )); then
   notify "Usage" "bin/make_appcast_item <plist> <dsa_priv_key> <release_notes_file>"
   exit 1
 fi
@@ -42,8 +41,7 @@ while :
 do
   read -rn 1 KEY <&1
 
-  if [[ $KEY = "y" ]]
-  then
+  if [[ $KEY = "y" ]]; then
     break
   else
     echo ""
@@ -52,10 +50,8 @@ do
   fi
 done
 
-if [[ -n $FORCE_APPCAST ]]
-then
-  if [[ "$VERSION" == "$OLD_VERSION" ]]
-  then
+if [[ -n $FORCE_APPCAST ]]; then
+  if [[ "$VERSION" == "$OLD_VERSION" ]]; then
     notify "Already up to date" "The published update matches the current CutBox version"
     exit 2
   fi
@@ -63,8 +59,7 @@ fi
 
 IS_404=$(curl -s "https://github.com/cutbox/CutBox/releases/download/${VERSION}/CutBox.dmg" --write-out "%{http_code}")
 
-if [[ "$IS_404" == "Not Found404" ]]
-then
+if [[ "$IS_404" == "Not Found404" ]]; then
   notify "" "CutBox.dmg ${VERSION} not found (404)"
   exit 1
 fi
