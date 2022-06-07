@@ -1,4 +1,5 @@
-CutBox version 1.4.21
+CutBox version 1.4.22
 
-- Reload themes in preferences
+- Add reload themes to cutbox menu
+- ...?
 
