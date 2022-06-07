@@ -83,11 +83,11 @@ appcast_remaining=$(tail -n+4 appcast.xml)
 echo "${appcast_top}
 $(
   VERSION=$VERSION \
-    DMG_LENGTH=$DMG_LENGTH \
-    DSA_SIGNATURE=$DSA_SIGNATURE \
-    DATE=$(date -R) \
-    RELEASE_NOTES=$RELEASE_NOTES_HTML \
-    mo appcast_item.mustache
+      DMG_LENGTH=$DMG_LENGTH \
+      DSA_SIGNATURE=$DSA_SIGNATURE \
+      DATE=$(date -R) \
+      RELEASE_NOTES=$RELEASE_NOTES_HTML \
+      mo appcast_item.mustache
 )
 ${appcast_remaining}" > appcast.xml
 
