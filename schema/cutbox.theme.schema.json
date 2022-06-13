@@ -1,0 +1,129 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://cutbox.github.io/schemas/cutbox.theme.schema.json",
+  "description": "CutBox Theme Schema --- file extension .cutboxTheme",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 80
+    },
+    "popupBackgroundColor": {
+      "type": "string",
+      "minLength": 7,
+      "maxLength": 9,
+      "pattern": "^#?[0-9a-fA-F]{6,8}"
+    },
+    "searchText": {
+      "type": "object",
+      "properties": {
+        "cursorColor": {
+          "type": "string",
+          "minLength": 7,
+          "maxLength": 9,
+          "pattern": "^#?[0-9a-fA-F]{6,8}"
+
+        },
+        "textColor": {
+          "type": "string",
+          "minLength": 7,
+          "maxLength": 9,
+          "pattern": "^#?[0-9a-fA-F]{6,8}"
+        },
+        "backgroundColor": {
+          "type": "string",
+          "minLength": 7,
+          "maxLength": 9,
+          "pattern": "^#?[0-9a-fA-F]{6,8}"
+        },
+        "placeholderTextColor": {
+          "type": "string",
+          "minLength": 7,
+          "maxLength": 9,
+          "pattern": "^#?[0-9a-fA-F]{6,8}"
+        }
+      },
+      "required": [
+        "cursorColor",
+        "textColor",
+        "backgroundColor",
+        "placeholderTextColor"
+      ]
+    },
+    "clip": {
+      "type": "object",
+      "properties": {
+        "backgroundColor": {
+          "type": "string",
+          "minLength": 7,
+          "maxLength": 9,
+          "pattern": "^#?[0-9a-fA-F]{6,8}"
+        },
+        "textColor": {
+          "type": "string",
+          "minLength": 7,
+          "maxLength": 9,
+          "pattern": "^#?[0-9a-fA-F]{6,8}"
+        },
+        "highlightColor": {
+          "type": "string",
+          "minLength": 7,
+          "maxLength": 9,
+          "pattern": "^#?[0-9a-fA-F]{6,8}"
+        },
+        "highlightTextColor": {
+          "type": "string",
+          "minLength": 7,
+          "maxLength": 9,
+          "pattern": "^#?[0-9a-fA-F]{6,8}"
+        }
+      },
+      "required": [
+        "backgroundColor",
+        "textColor",
+        "highlightColor",
+        "highlightTextColor"
+      ]
+    },
+    "preview": {
+      "type": "object",
+      "properties": {
+        "textColor": {
+          "type": "string",
+          "minLength": 7,
+          "maxLength": 9,
+          "pattern": "^#?[0-9a-fA-F]{6,8}"
+        },
+        "backgroundColor": {
+          "type": "string",
+          "minLength": 7,
+          "maxLength": 9,
+          "pattern": "^#?[0-9a-fA-F]{6,8}"
+        },
+        "selectedTextBackgroundColor": {
+          "type": "string",
+          "minLength": 7,
+          "maxLength": 9,
+          "pattern": "^#?[0-9a-fA-F]{6,8}"
+        }
+      },
+      "required": [
+        "textColor",
+        "backgroundColor",
+        "selectedTextBackgroundColor"
+      ]
+    },
+    "spacing": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "name",
+    "popupBackgroundColor",
+    "searchText",
+    "clip",
+    "preview",
+    "spacing"
+  ]
+}
