@@ -9,40 +9,14 @@
       "minLength": 1,
       "maxLength": 80
     },
-    "popupBackgroundColor": {
-      "type": "string",
-      "minLength": 7,
-      "maxLength": 9,
-      "pattern": "^#?[0-9a-fA-F]{6,8}"
-    },
+    "popupBackgroundColor": { "$ref": "#/$defs/hex-color" },
     "searchText": {
       "type": "object",
       "properties": {
-        "cursorColor": {
-          "type": "string",
-          "minLength": 7,
-          "maxLength": 9,
-          "pattern": "^#?[0-9a-fA-F]{6,8}"
-
-        },
-        "textColor": {
-          "type": "string",
-          "minLength": 7,
-          "maxLength": 9,
-          "pattern": "^#?[0-9a-fA-F]{6,8}"
-        },
-        "backgroundColor": {
-          "type": "string",
-          "minLength": 7,
-          "maxLength": 9,
-          "pattern": "^#?[0-9a-fA-F]{6,8}"
-        },
-        "placeholderTextColor": {
-          "type": "string",
-          "minLength": 7,
-          "maxLength": 9,
-          "pattern": "^#?[0-9a-fA-F]{6,8}"
-        }
+        "cursorColor": { "$ref": "#/$defs/hex-color" },
+        "textColor": { "$ref": "#/$defs/hex-color" },
+        "backgroundColor": { "$ref": "#/$defs/hex-color" },
+        "placeholderTextColor":  { "$ref": "#/$defs/hex-color" }
       },
       "required": [
         "cursorColor",
@@ -54,30 +28,10 @@
     "clip": {
       "type": "object",
       "properties": {
-        "backgroundColor": {
-          "type": "string",
-          "minLength": 7,
-          "maxLength": 9,
-          "pattern": "^#?[0-9a-fA-F]{6,8}"
-        },
-        "textColor": {
-          "type": "string",
-          "minLength": 7,
-          "maxLength": 9,
-          "pattern": "^#?[0-9a-fA-F]{6,8}"
-        },
-        "highlightColor": {
-          "type": "string",
-          "minLength": 7,
-          "maxLength": 9,
-          "pattern": "^#?[0-9a-fA-F]{6,8}"
-        },
-        "highlightTextColor": {
-          "type": "string",
-          "minLength": 7,
-          "maxLength": 9,
-          "pattern": "^#?[0-9a-fA-F]{6,8}"
-        }
+        "backgroundColor": { "$ref": "#/$defs/hex-color" },
+        "textColor": { "$ref": "#/$defs/hex-color" },
+        "highlightColor": { "$ref": "#/$defs/hex-color" },
+        "highlightTextColor": { "$ref": "#/$defs/hex-color" }
       },
       "required": [
         "backgroundColor",
@@ -89,24 +43,9 @@
     "preview": {
       "type": "object",
       "properties": {
-        "textColor": {
-          "type": "string",
-          "minLength": 7,
-          "maxLength": 9,
-          "pattern": "^#?[0-9a-fA-F]{6,8}"
-        },
-        "backgroundColor": {
-          "type": "string",
-          "minLength": 7,
-          "maxLength": 9,
-          "pattern": "^#?[0-9a-fA-F]{6,8}"
-        },
-        "selectedTextBackgroundColor": {
-          "type": "string",
-          "minLength": 7,
-          "maxLength": 9,
-          "pattern": "^#?[0-9a-fA-F]{6,8}"
-        }
+        "textColor": { "$ref": "#/$defs/hex-color" },
+        "backgroundColor": { "$ref": "#/$defs/hex-color" },
+        "selectedTextBackgroundColor": { "$ref": "#/$defs/hex-color" }
       },
       "required": [
         "textColor",
@@ -115,7 +54,9 @@
       ]
     },
     "spacing": {
-      "type": "number"
+      "type": "number",
+      "minimum": 0,
+      "maximum": 5
     }
   },
   "required": [
@@ -125,5 +66,13 @@
     "clip",
     "preview",
     "spacing"
-  ]
+  ],
+  "$defs": {
+    "hex-color": {
+      "type": "string",
+      "minLength": 7,
+      "maxLength": 9,
+      "pattern": "^#?[0-9a-fA-F]{6,8}$"
+    }
+  }
 }
