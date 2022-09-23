@@ -1,12 +1,6 @@
 #!/bin/sh
 
-notify() {
-  osascript <<EOF
-  display notification "$2" with title "$1"
-EOF
-}
-
-notify "Appcast" "Building update to latest..."
+echo "Appcast" "Building update to latest..."
 
 PROJECT_DIR="$(dirname $0)/.."
 DSA="$HOME/keys-sparkle-cutbox/dsa_priv.pem"

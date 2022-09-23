@@ -1,0 +1,12 @@
+  <item>
+    <title>${VERSION}</title>
+    <pubDate>${DATE}</pubDate>
+    <description><![CDATA[${{RELEASE_NOTES}}]]></description>
+    <sparkle:minimumSystemVersion>10.11</sparkle:minimumSystemVersion>
+    <enclosure url="https://github.com/ocodo/CutBox/releases/download/${VERSION}/CutBox.dmg"
+               sparkle:version="${BUILD_NUMBER}"
+               sparkle:shortVersionString="${VERSION}"
+               length="${DMG_LENGTH}"
+               type="application/octet-stream"
+               sparkle:dsaSignature="${DSA_SIGNATURE}"/>
+  </item>
