@@ -1,3 +1,0 @@
-#!/bin/sh
-
-brew install cmark; echo "cmark installed"

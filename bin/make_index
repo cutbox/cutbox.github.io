@@ -1,3 +1,8 @@
 #!/bin/bash
 
+if [[ $1 == "" ]]; then
+    echo "Usage: $0 <version>"
+    exit 1
+fi
+
 VER=$1 envsubst < index.html.template > index.html

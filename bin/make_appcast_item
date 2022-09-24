@@ -71,7 +71,7 @@ DSA_SIGNATURE=$(sign_update "$DMG_FILE" "$DSA_PRIV_KEY")
 
 rm "$DMG_FILE"
 
-RELEASE_NOTES_HTML="$( cmark "${RELEASE_NOTES_FILE}" | tr -d "\n" )"
+RELEASE_NOTES_HTML="$(cmark "${RELEASE_NOTES_FILE}" | tr -d "\n")"
 
 appcast_top=$(head -3 appcast.xml)
 appcast_remaining=$(tail -n+4 appcast.xml)
