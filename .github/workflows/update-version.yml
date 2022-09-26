@@ -1,0 +1,24 @@
+name: Web / Update CutBox Version
+
+on:
+  repository_dispatch:
+  
+  workflow_dispatch:
+    inputs:
+      release:
+        required: true
+        description: "Latest CutBox version (Should be already released on Homebrew)"
+
+jobs:
+  update:
+    name: Update CutBox Version
+    uses: macos-11
+    env:
+      RELEASE: ${{ github.event.inputs.release }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Update Version
+        run: |
+          bin/make_index ${RELEASE}
