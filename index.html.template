@@ -19,7 +19,7 @@
       <img src="./images/cutbox-icon-2-preview.png"/>
       <h1>CutBox</h1>
       <p>Make your macOS pasteboard awesome.</p>
-      <p class="ButtonContainer"><a class="Button" href="https://github.com/cutbox/CutBox">Get CutBox from Github</a></p>
+      <p class="ButtonContainer"><a class="Button" href="https://github.com/cutbox/CutBox/releases/latest">Get CutBox from Github</a></p>
     </div>
 
     <div class="Aligner">
