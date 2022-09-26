@@ -12,7 +12,7 @@ on:
 jobs:
   update:
     name: Update CutBox Version
-    uses: macos-11
+    runs-on: macos-11
     env:
       RELEASE: ${{ github.event.inputs.release }}
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
