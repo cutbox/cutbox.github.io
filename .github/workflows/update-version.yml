@@ -22,3 +22,7 @@ jobs:
       - name: Update Version
         run: |
           bin/make_index ${RELEASE}
+          git diff
+          git add .
+          git commit -m "Update index ${RELEASE}"
+          git push
