@@ -1,7 +1,11 @@
-# 1.5.6
+# 1.5.8
 
-- When an empty string is copied to the clipboard the latest item in
-  CutBox is deleted.
-
-  This supports Password managers that clear the clipboard shortly after
-  copying a password.
+- History filtering
+  - Click clock icon or Cmd + T to toggle history filter
+  - Input history filter as N units (e.g. 10min, 1hr) to only search/show items within then given time limit.
+- [ ] Clear History updated
+  New options
+  - Last Hour
+  - Today
+  - Older than today
+  - Older than this week
