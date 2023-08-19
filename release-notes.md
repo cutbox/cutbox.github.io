@@ -11,5 +11,11 @@
     pressing <kbd>RET</kbd> should set focus to Search text.
 - [ ] Planned: Reset timestamps (to time now) on selected item(s),
     Context Menu "Update timestamp" on selected items.
-- [ ] Planned: Additional language localization
+- [x] Planned: Additional language support
     - [x] Deutsch
+    - [x] Español
+    - [x] Francais
+    - [x] Japanese
+    - [x] Francais
+    - [x] Simplified Chinese
+
