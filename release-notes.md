@@ -1,4 +1,4 @@
-# 1.5.9 - Pre-Release
+# 1.6.0 - Pre-Release
 
 - [x] New Feature: Time filter keyword "none" New keyword for time
     filtering. Select items missing a timestamp (All items stored by
