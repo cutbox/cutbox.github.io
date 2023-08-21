@@ -9,7 +9,7 @@ CutBox is now available in more languages for an enhanced user experience:
 - 嗨 (Simplified Chinese)
 - やあ (Japanese)
 - วัสดี (Thai)
--  (Korean)
+- 안녕 (Korean)
 - Hallo (Deutsch)
 - Hola (Español)
 - Bonjour (Français) 
