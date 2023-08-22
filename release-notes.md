@@ -16,7 +16,7 @@ CutBox is now available in more languages for an enhanced user experience:
 
 ### Time Filter Keyboard Control
 
-We've introduced a convenient keyboard shortcut for the time filter:
+We've introduced a convenient keyboard shortcut for the newly added time filter (v1.5.8 - Filtering to time limit):
 
 - Use <kbd>Cmd</kbd> + <kbd>h</kbd> to toggle the time filter text field on/off.
 - When toggled on, the text cursor automatically moves to enter the time filter.
