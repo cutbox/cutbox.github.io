@@ -6,43 +6,67 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+code {
+  font-family: monospace;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+}
+
 .code-view {
   border-radius: 10pt;
   background-color: #1E2024;
   color: #FFC;
   padding: 18pt;
-  width: 550px;
+  width: 80%;
+  max-width: 500px;
   margin: auto;
   text-align: left;
   box-shadow: inset 0px -5px 10px #0006;
 }
 
 .Aligner {
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1280px;
+  margin: 0 auto;
   justify-content: center;
+}
+
+@media (max-width: 960px) {
+  .Aligner {
+    display: flex; /* Change display to flex */
+    flex-wrap: wrap; /* Add this line */
+    gap: 20px;
+    justify-content: center;
+    padding: 0 20px;
+    margin: auto; /* Center using flexbox */
+  }
+  .Card {
+    max-width: 440px;
+    margin: 5px auto; /* Center each card */
+  }
 }
 
 @media (max-width: 800px) {
   .Aligner {
-    display: block;
+    grid-template-columns: 1fr;
+  }
+  .Card {
+    max-width: 800px;
   }
 }
 
-.Aligner-item, .Card{
+.Card {
   text-align: center;
-  width: 30%;
-  padding: 10px;
+  padding: 10pt;
   border: 1px solid #FFF1;
-  border-radius: 7px;
+  border-radius: 12pt;
   margin: 5px;
-  height: 360px;
-}
-
-@media (max-width: 800px) {
-  .Aligner-item, .Card{
-    width: auto;
-  }
+  height: 340px;
+  max-width: 320px;
 }
 
 .Version {
