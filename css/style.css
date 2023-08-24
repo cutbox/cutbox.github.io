@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 *, body, h1, h2, h3, h4, p, div {
-  color #DDD;
   background-color: #282C32;
+  color: #99a9af;
   font-family: 'Montserrat', sans-serif;
 }
 
