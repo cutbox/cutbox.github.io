@@ -53,6 +53,7 @@
 a.Button:hover
 {
   background-color: #E0F1FA;
+  color: #282C32;
 }
 
 .ButtonContainer
