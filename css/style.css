@@ -6,6 +6,16 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+.code-view {
+  border-radius: 10px;
+  background-color: #3E3835;
+  color: #FFC;
+  padding: 10px;
+  width: 400px;
+  margin: auto;
+  text-align: left;
+}
+
 .Aligner {
   display: flex;
   align-items: center;
