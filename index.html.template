@@ -17,10 +17,9 @@
   <body>
     <div class="Centered">
       <img src="./images/cutbox-icon-2-preview.png"/>
-      <h1>CutBox</h1>
-      <p>Make your macOS pasteboard awesome.</p>
-
-      <h2>Install via homebrew:</h2>
+      <p>Make your macOS pasteboard awesome with...</p>
+      <img src="./images/cutbox-logo-text.png"/>
+      <h2>Install CutBox using homebrew:</h2>
       <p>
       <pre class="code-view">brew tap cutbox/cutbox
 brew install --cask cutbox</pre>
