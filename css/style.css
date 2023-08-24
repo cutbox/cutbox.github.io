@@ -7,13 +7,14 @@
 }
 
 .code-view {
-  border-radius: 10px;
-  background-color: #272626;
+  border-radius: 10pt;
+  background-color: #1E2024;
   color: #FFC;
-  padding: 10px;
-  width: 400px;
+  padding: 18pt;
+  width: 550px;
   margin: auto;
   text-align: left;
+  box-shadow: inset 0px -5px 10px #0006;
 }
 
 .Aligner {
