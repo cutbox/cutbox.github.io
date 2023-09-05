@@ -329,7 +329,7 @@ require(<span class="hljs-string">&quot;~/.cutbox/mustache.js&quot;</span>)
 
 <span class="hljs-comment">// After function definitions...</span>
 
-<span class="hljs-keyword">var</span> cutboxFunctions = [
+<span class="hljs-keyword">this</span>.cutboxFunctions = [
   {
     <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Join&quot;</span>, <span class="hljs-comment">// Names should be unique (if not the first named fn will win.)</span>
     <span class="hljs-attr">fn</span>: joining <span class="hljs-comment">// You can use any function defined in .cutbox.js</span>
@@ -390,7 +390,7 @@ etc</pre><p>into this...</p>
 
 <span class="hljs-keyword">var</span> markdownCodeIndent = <span class="hljs-function"><span class="hljs-params">str</span> =&gt;</span> str.replace(<span class="hljs-regexp">/^/mg</span>, <span class="hljs-string">&quot;    &quot;</span>);
 
-<span class="hljs-keyword">var</span> cutboxFunctions = [
+<span class="hljs-keyword">this</span>.cutboxFunctions = [
   {
     <span class="hljs-comment">// Acts like shell command: tr -s &#x27; &#x27;</span>
     <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Squeeze&quot;</span>,
@@ -485,7 +485,7 @@ etc</pre><p>into this...</p>
 <p>Note: With subsequent versions of CutBox function description metadata may extend to allow for new features.</p>
 <h1 id="1-5-0">1.5.0</h1>
 <h1 id="in-a-nutshell">In a nutshell</h1>
-<pre class="hljs"><span class="hljs-keyword">var</span> cutboxFunctions = [
+<pre class="hljs"><span class="hljs-keyword">this</span>.cutboxFunctions = [
     { <span class="hljs-attr">fn</span>: CutBoxFunction, <span class="hljs-attr">name</span>: <span class="hljs-built_in">String</span> }
     ...
 ];</pre><h3 id="cutboxfunction"><code>CutBoxFunction</code></h3>
@@ -496,7 +496,7 @@ etc</pre><p>into this...</p>
 <p>Any valid JS function, or function reference can be used, providing it adheres to the interface spec above:</p>
 <pre class="hljs"><span class="hljs-keyword">let</span> joinWithDashes = <span class="hljs-function"><span class="hljs-params">items</span> =&gt;</span> items.join(<span class="hljs-string">&quot; - &quot;</span>)
 
-<span class="hljs-keyword">var</span> cutboxFunctions = [
+<span class="hljs-keyword">this</span>.cutboxFunctions = [
     { 
         <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Join with spaces&quot;</span>,
         <span class="hljs-attr">fn</span>: <span class="hljs-function">(<span class="hljs-params">i</span>) =&gt;</span> i.join(<span class="hljs-string">&quot;\n&quot;</span>)
